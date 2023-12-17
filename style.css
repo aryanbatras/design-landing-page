@@ -1,0 +1,125 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+body{
+	display: flex;
+}
+
+.left{
+	background: antiquewhite;
+  width: 40%;
+  height: 100%;
+}
+
+.right{
+  width: 60%;
+  height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.right .rtop{
+	height: 50%;
+	display: flex;
+}
+
+.right .rbottom{
+	background-image: url('lemon.jpg');
+	background-size: cover;
+	height: 50%;
+}
+
+.right .rtop .rtopleft {
+	background-image: url('orange.jpg');
+	background-size: cover;
+	width: 50%;
+}
+
+.right .rtop .rtopright {
+	background-image: url('watermelon.jpg');
+	background-size: cover;
+	width: 50%;
+}
+
+.arrowleft{
+	display: inline-block;
+	border: solid black;
+	border-width: 0 2px 2px 0;
+	padding: 2.5px;
+	margin: 12px 18px;
+	transform: rotate(135deg);
+}
+
+.nav{
+	display: flex;
+}
+
+.navmid ul{
+	width: 250%;
+	list-style-type: none;
+	text-decoration: none solid 1px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 8px 12px;
+}
+
+.navmid ul li{
+	margin: 0 4px;
+	padding: 0 4px;
+	font-family: sans-serif;
+	font-weight: 300;
+}
+
+.maintext{
+	width: 50%;
+	position: relative;
+	top: 32%;
+	left: 25%;
+}
+
+.maintext h1{
+	font-size: 72px;
+	font-style: sans-serif;
+	font-style: bold;
+}
+
+.maintext p{
+	font-size: 12px;
+	font-family: sans-serif;
+	font-weight: 400;
+	letter-spacing: 2px;
+	word-spacing: 4px;
+	margin: 4px 0 12px 0;
+}
+
+a{
+	color: black;
+	font-weight: 300;
+	font-family: sans-serif;
+	text-decoration: underline solid 0.5px black;
+}
+
+@media (max-width: 768px){
+	body{
+		flex-direction: column
+	}
+	
+	.navmid ul {
+		width: 75%;
+	}
+	
+	.left, .right{
+		width: 100%;
+		height: 100%;
+	}
+}
